@@ -1,0 +1,9 @@
+<form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Placa del vehiculo</label>
+      <input type="text" class="form-control" name="placa" [(ngModel)]="datoSalida.placa"  id="placa" placeholder="ingrese la placa">
+    </div>
+    <div>
+        <button type="button" class="btn btn-primary" (click)="consultaRegistrosalida()">Ingresar</button>
+    </div>
+  </form>

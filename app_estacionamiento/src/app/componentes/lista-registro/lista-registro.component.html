@@ -1,0 +1,26 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Placa</th>
+        <th scope="col">Tipo vehiculo</th>
+        <th scope="col">Ingreso</th>
+        <th scope="col">Salida</th>
+        <th scope="col">Tiempo (min)</th>
+        <th scope="col">Valor servicio</th>
+        <th scope="col">Estado</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let dato of datos">
+      <tr>
+          <th scope="row">{{dato.id}}</th>
+          <td>{{dato.placa}}</td>
+          <td>{{dato.categoria}}</td>
+          <td>{{dato.ingreso}}</td>
+          <td>{{dato.salida}}</td>
+          <td>{{dato.tiempo_parqueo}}</td>
+          <td> $ {{dato.cobro_servicio}}</td>
+          <td [ngClass]="dato.estado == 'En parqueo' ? 'verde' : 'rojo'">{{dato.estado}}</td>
+      </tr>
+    </tbody>
+  </table>

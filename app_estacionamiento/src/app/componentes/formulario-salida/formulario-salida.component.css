@@ -1,0 +1,10 @@
+.btn-primary{
+    background-color: rgb(70, 70, 252);
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover{
+    background-color: rgb(46, 46, 247);
+    transition: all 0.3s;
+}

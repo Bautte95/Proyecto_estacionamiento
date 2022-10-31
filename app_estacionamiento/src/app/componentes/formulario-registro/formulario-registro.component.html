@@ -1,0 +1,22 @@
+<form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Placa del vehiculo</label>
+      <input type="text" class="form-control" name="placa" [(ngModel)]="registro.placa" id="placa" placeholder="ingrese la placa">
+    </div>
+    <div class="form-group">
+      <label for="tipo_vehiculo">Tipo de vehiculo</label>
+      <select class="form-control" name="tipo_vehiculo" [(ngModel)]="registro.tipo_vehiculo" id="tipo_vehiculo">
+        <option value="1">Bicicleta</option>
+        <option value="2">Moto</option>
+        <option value="3">Automovil</option>
+        <option value="4">Vehiculo Pesado</option>
+        <option value="5">Policia</option>
+        <option value="5">Ejercito</option>
+        <option value="5">Bomberos</option>
+        <option value="5">Ambulancia</option>
+      </select>
+    </div>
+    <div>
+        <button type="button" class="btn btn-primary" (click)="registrarIngreso()">Ingresar</button>
+    </div>
+  </form>
